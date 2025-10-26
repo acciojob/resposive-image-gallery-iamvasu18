@@ -8,16 +8,18 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-     <h1 style="text-align:center;">Responsive Flexbox Gallery</h1>
+    <header>
+    <h1>Flexbox Image Gallery</h1>
+    <p>Images are inline data-URLs so no external network requests are required.</p>
+  </header>
 
-  <div class="gallery">
-    <img src="https://picsum.photos/400/300" alt="Image 1" />
-    <img src="https://picsum.photos/350/400" alt="Image 2" />
-    <img src="https://picsum.photos/300/300" alt="Image 3" />
-    <img src="https://picsum.photos/450/300" alt="Image 4" />
-    <img src="https://picsum.photos/500/400" alt="Image 5" />
-    <img src="https://picsum.photos/420/380" alt="Image 6" />
-  </div>
+  <main class="cards" role="list">
+    <!-- data URL SVG images — no external networking, quick to load -->
+    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='800'%20height='600'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23cde7ff'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='36'%20fill='%23000'%3EImage%201%3C/text%3E%3C/svg%3E" alt="Image 1">
+    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='800'%20height='600'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23ffd9c9'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='36'%20fill='%23000'%3EImage%202%3C/text%3E%3C/svg%3E" alt="Image 2">
+    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='800'%20height='600'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23e4ffd9'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='36'%20fill='%23000'%3EImage%203%3C/text%3E%3C/svg%3E" alt="Image 3">
+    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='800'%20height='600'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23f0e2ff'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='36'%20fill='%23000'%3EImage%204%3C/text%3E%3C/svg%3E" alt="Image 4">
+  </main>
 	<script type="text/javascript" src="./script.js">
 </script>
 
