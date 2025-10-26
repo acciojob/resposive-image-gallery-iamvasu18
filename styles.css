@@ -1,31 +1,31 @@
- body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: #f7f7f7;
-      padding: 20px;
-    }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f7f7f7;
+  padding: 20px;
+}
 
-    main.cards {
-      display: flex;           /* use flexbox */
-      flex-wrap: wrap;         /* allow images to wrap to next line */
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 0;                  /* we'll control spacing with margin on images */
-    }
+main.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
-    /* Images (acceptance criteria) */
-    main.cards img {
-      max-width: 25vw;                          /* max width 25vw */
-      height: auto;                             /* keep aspect ratio */
-      margin: 10px;                             /* margin 10px */
-      border: 3px solid #000;                   /* 3px solid #000 */
-      box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); /* required box-shadow */
-      display: block;
-    }
+main.cards img {
+  height: auto;
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+}
 
-    /* Small screens: ensure images aren't huge */
-    @media (max-width: 600px) {
-      main.cards img { max-width: 45vw; }
-    }
+@media (max-width: 600px) {
+  main.cards img {
+    max-width: 45vw;
+  }
+}
 
-    header { margin-bottom: 12px; }
+header {
+  margin-bottom: 12px;
+}
